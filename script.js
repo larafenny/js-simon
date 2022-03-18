@@ -25,5 +25,15 @@ function randomNumber(min,max){
 // Creo un array vuoto
 const arrayNumDaRicordare = [];
 
+// Creeo funzione che riempia array con 5 numeri casuali
+function riempieArray(nVolte){
+    for(let i=0; i<nVolte; i++){
+        arrayNumDaRicordare.push(randomNumber(1,10));
+    }
+    console.log(arrayNumDaRicordare);
+}
+
+riempieArray(5);
+
 //let numRandom = randomNumber(1, 100);
 //console.log(numRandom);
