@@ -14,4 +14,16 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
        console.log('quali numeri indovinati')
 */
 
-//
+
+// Funzione che genera numeri a caso in un range 
+function randomNumber(min,max){
+    const range = max - min + 1;
+    const randomNumber = Math.floor(Math.random()*range + min);
+    return randomNumber;
+}
+
+// Creo un array vuoto
+const arrayNumDaRicordare = [];
+
+//let numRandom = randomNumber(1, 100);
+//console.log(numRandom);
