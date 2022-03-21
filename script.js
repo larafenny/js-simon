@@ -33,7 +33,15 @@ function riempieArray(nVolte){
     console.log(arrayNumDaRicordare);
 }
 
+//richiamo funzione e ci metto 5 come parametro come da richiesto dall'esercizio
 riempieArray(5);
 
-//let numRandom = randomNumber(1, 100);
-//console.log(numRandom);
+// Prendo elemento con id containeer dell'html
+const container = document.getElementById('container');
+
+// creoo div dovee mettere arrayNumDaRicordare
+const array = document.createElement('div');
+
+// inserisco riempieArray nell'html
+container.append(arrayNumDaRicordare);
+
